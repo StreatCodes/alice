@@ -29,6 +29,7 @@ func proxyHandler(config *Config) http.Handler {
 		}
 
 		// Include the configured headers if we have a matching config for the address
+		req.Header = r.Header.Clone()
 		match := matchingProxy(config.Proxies, headerAddress)
 		if match != nil {
 			log.Println("Matching URL, appending headers:")

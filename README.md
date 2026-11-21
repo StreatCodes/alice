@@ -1,6 +1,6 @@
 ## Alice
 
-An HTTP proxy that can upgrade requests from HTTP to HTTPS and insert headers. The proxy can be configured with a list of addresses which you can configure to inject headers. This is useful to insert an API key into HTTP requests at the proxy level. Additionally, it's useful if the environment you're working in doesn't have HTTPS available.
+An HTTP proxy that can upgrade requests from HTTP to HTTPS and insert headers. The proxy can be configured with a list of addresses to match on and headers to inject. This is useful to insert an API key into HTTP requests at the proxy level. Additionally, it's useful if the environment you're working in doesn't have HTTPS available.
 
 Here is an example config:
 
